@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacts</title>
+  <link rel="icon" type="image/x-icon" src="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("j7KAnOz0mb1L4essc");
+    })();
+  </script>
+  <script src="index.js">
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar py-0 fixed-top navbar-expand-lg navbar-dark  bg-black bg-gradient">
+      <div class="container-fluid ">
+        <a class="navbar-brand" style="font-size: xx-large"><img class="w-50" src="logo.png"
+            alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://ra1nb93.github.io/portfolio/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3">
+            <a class="btn btn-outline-danger py-3" href="https://www.instagram.com/alessio_martz/" role="button"
+              target="_blank">ig</a>
+            <a class="btn btn-outline-light py-3" href="https://twitter.com/Ra1nBlack" target="_blank">X</a>
+            <a class="btn btn-outline-info py-3" href="https://www.linkedin.com/in/alessio-martis-722b39a8/"
+              role="button" target="_blank"> in</a>
+            <a class="p-0" href="https://github.com/ra1nb93" target="_blank"> <img class=" w-25"
+                src="github-mark-white.png" alt=""></a>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container py-5">
+      <div class="text-center mt-5 ">
+        <h3>Contact Me</h3>
+        <p class="text-center">Se sei interessato al mio lavoro, ti prego di sentirti libero di contattarmi tramite
+          questo form o sui miei canali social. Sarò lieto di sapere di più su di te e sul tuo progetto.</p>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form>
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" required placeholder="my@email.com" class="form-control" />
+            <div class="form-floating my-5">
+              <input type="text" id="name" placeholder="e.g. Dawid" class="form-control" required />
+              <label for="name" class="form-label">Name:</label>
+            </div>
+            <div class="form-floating my-5">
+              <textarea id="message" style="height: 150px" class="form-control" placeholder="Write a message"
+                required></textarea>
+              <label for="message">Write a message</label>
+            </div>
+
+            <div class="text-center">
+              <button class="btn btn-primary"> Send!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class=" footer fixed-bottom mt-auto py-1 bg-black bg-gradient">
+    <div class="container text-center">
+      <span class="text-white">&#169; Alessio Martis 2023</span>
+    </div>
+  </footer>
+
+<script>     document.addEventListener("submit", e =>{ e.preventDefault(); sendMail()})</script> 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
