@@ -1,2 +1,2 @@
 # portfolio
-Il mio progetto in html e scs
+Il mio progetto in html e css
